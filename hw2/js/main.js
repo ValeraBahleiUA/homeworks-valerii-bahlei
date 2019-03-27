@@ -35,11 +35,29 @@ if (variable2 == 0){
   }
 
 
-  var car = { name: 'Lexus', age: 10, create: 2008, needRepair: false }
-  if(car.age > 5){
+var car = { name: 'Lexus', age: 10, create: 2008, needRepair: false } //Дан объект let car = { name: 'Lexus', age: 10, create: 2008, needRepair: false }. Написать условие если возраст машины больше 5 лет то нужно вывести в консоль сообщение 'Need Repair' и свойство needRepair в объекте car изменить на true; иначе изменить на false.
+if(car.age > 5){
     alert("man, you gotta go to Pay'N'Spray to get a new engine")
     car.needRepair = true
-  }else{
+}else{
     car.needRepair = false
     alert("your car is not broken")
-  }
+}
+
+// var item = { name: 'Intel core i7', price: '100$', discount: "15%" } // вообще не понимаю, как мне из discount: "15%" вытащить цыфру, то есть догадываюсь, но уже поздно
+// if(Boolean(item.discount) == true){
+
+// }else{
+//     alert(item.price)
+// };
+
+
+var product = { name: 'Яблоко',  price: '10$'};
+var min = 10; // минимальная цена
+var max = 20; // максимальная цена
+if(product.price >= min && product.price <= max){
+alert(product.name)
+}else{
+    alert('Нет таких товаров(')
+}
+
