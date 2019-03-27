@@ -64,4 +64,4 @@ alert(product.name)
 var anExpensivePruduct = { product:"iPhone" };
 anExpensivePruduct.price = 1000;
 anExpensivePruduct.price.currency = "dollar";
-anExpensivePruduct.details = {model:'6S', color:'Space Gray' }
+anExpensivePruduct.details = { model:'6S', color:'Space Gray' }
