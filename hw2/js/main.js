@@ -13,3 +13,33 @@ undefined + 2 // NaN
 null + 5 // 5. null  может преобразоваться в ноль, в отличии от undefined
 true + undefined // NaN 
 
+var variable1 = "hiddedn"; //Если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
+if (variable1 == "hidden"){
+    variable1 = "visible"
+    alert("variable1 is now 'visible'")
+  }else{
+    variable1 = "hidden"
+    alert("variable1 is still 'hiden'")
+  };
+  
+var variable2 = 2; //Используя if, записать условие: если переменная равна нулю, присвоить ей 1; если меньше нуля - строку “less then zero”; если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).
+if (variable2 == 0){
+    variable2 = 1
+    alert("variable2 is now = 1")
+  }else if(variable2 < 0){
+    variable2 = "less then zero" 
+    alert("variable2 is less then zero")
+  }else if(variable2 > 0){
+      variable2 *= 10
+      alert(variable2)  
+  }
+
+
+  var car = { name: 'Lexus', age: 10, create: 2008, needRepair: false }
+  if(car.age > 5){
+    alert("man, you gotta go to Pay'N'Spray to get a new engine")
+    car.needRepair = true
+  }else{
+    car.needRepair = false
+    alert("your car is not broken")
+  }
