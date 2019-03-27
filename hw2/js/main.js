@@ -44,7 +44,7 @@ if(car.age > 5){
     alert("your car is not broken")
 }
 
-// var item = { name: 'Intel core i7', price: '100$', discount: "15%" } // вообще не понимаю, как мне из discount: "15%" вытащить цыфру, то есть догадываюсь, но уже поздно
+// var item = { name: 'Intel core i7', price: '100$', discount: "15%" } // вообще не понимаю, как мне из discount: "15%" вытащить цыфру, то есть догадываюсь, но уже поздно, может потом напишу
 // if(Boolean(item.discount) == true){
 
 // }else{
@@ -61,3 +61,7 @@ alert(product.name)
     alert('Нет таких товаров(')
 }
 
+var anExpensivePruduct = { product:"iPhone" };
+anExpensivePruduct.price = 1000;
+anExpensivePruduct.price.currency = "dollar";
+anExpensivePruduct.details = {model:'6S', color:'Space Gray' }
