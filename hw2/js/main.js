@@ -17,29 +17,29 @@ var variable1 = "hiddedn"; //Если переменная равна “hidden�
 if (variable1 == "hidden"){
     variable1 = "visible"
     alert("variable1 is now 'visible'")
-  }else{
+} else {
     variable1 = "hidden"
     alert("variable1 is still 'hiden'")
-  };
+О};
   
 var variable2 = 2; //Используя if, записать условие: если переменная равна нулю, присвоить ей 1; если меньше нуля - строку “less then zero”; если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).
-if (variable2 == 0){
+if (variable2 == 0) {
     variable2 = 1
     alert("variable2 is now = 1")
-  }else if(variable2 < 0){
+} else if(variable2 < 0) {
     variable2 = "less then zero" 
     alert("variable2 is less then zero")
-  }else if(variable2 > 0){
+} else if(variable2 > 0){
       variable2 *= 10
       alert(variable2)  
-  }
+}
 
 
 var car = { name: 'Lexus', age: 10, create: 2008, needRepair: false } //Дан объект let car = { name: 'Lexus', age: 10, create: 2008, needRepair: false }. Написать условие если возраст машины больше 5 лет то нужно вывести в консоль сообщение 'Need Repair' и свойство needRepair в объекте car изменить на true; иначе изменить на false.
-if(car.age > 5){
+if (car.age > 5) {
     alert("man, you gotta go to Pay'N'Spray to get a new engine")
     car.needRepair = true
-}else{
+} else {
     car.needRepair = false
     alert("your car is not broken")
 }
@@ -55,9 +55,9 @@ if(car.age > 5){
 var product = { name: 'Яблоко',  price: '10$'};
 var min = 10; // минимальная цена
 var max = 20; // максимальная цена
-if(product.price >= min && product.price <= max){
+if (product.price >= min && product.price <= max) {
 alert(product.name)
-}else{
+} else {
     alert('Нет таких товаров(')
 }
 
