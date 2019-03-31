@@ -27,12 +27,20 @@ let car = { name: 'Lexus', age: 10, create: 2008, needRepair: false }
 car.age > 5 ? car.needRepair = true :
 car.needRepair = false, alert("your car is not broken");
 
-var strokeVarInput = "i am in the easycode";
-var strokeVarOutput = '';
-for (var i = 0; i < strokeVarInput.length; i++) {
-  strokeVarOutput += (strokeVarInput[i - 1] == ' ') ? strokeVarInput[i].toUpperCase() : strokeVarInput[i];
+var stringVarInput = "i am in the easycode";
+var stringVarOutput = '';
+for (var i = 0; i < stringVarInput.length; i++) {
+  stringVarOutput += (stringVarInput[i - 1] == ' ') ? stringVarInput[i].toUpperCase() : stringVarInput[i];
 
 }
-strokeVarOutput.charAt(0).toUpperCase()
-alert(strokeVarOutput);
+alert(stringVarOutput.charAt(0).toUpperCase() + stringVarOutput.substr(1,stringVarOutput.length - 1)); //Мы ведь узнаем, где начинаются слови через пробелы, а 1 бкува не имеет его перед собой
+
+
+var stringVarInput1 = "tseb eht ma i", stringVarOutput1 = '';  //Дана строка “tseb eht ma i”. Используя циклы, сделать строку-перевертыш (то есть последняя буква становится первой, предпоследняя - второй итд).
+for (var i = stringVarInput1.length - 1; i >=0; i--) {
+  stringVarOutput1 += stringVarInput1[i];
+}
+alert(stringVarOutput1)
+
+//Какие факториалы? Какие фор офы фор ины? Я ГУМАНИТАРЕЙ!!11! Вы что, хотите, чтоб я СДОХ? Зачем я вообще полез в это программирование? Почему мне спокрйно не жилось?
 
