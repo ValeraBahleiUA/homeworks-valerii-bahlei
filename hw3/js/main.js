@@ -33,13 +33,44 @@ for (var i = 0; i < stringVarInput.length; i++) {
   stringVarOutput += (stringVarInput[i - 1] == ' ') ? stringVarInput[i].toUpperCase() : stringVarInput[i];
 
 }
-alert(stringVarOutput.charAt(0).toUpperCase() + stringVarOutput.substr(1,stringVarOutput.length - 1)); //Мы ведь узнаем, где начинаются слови через пробелы, а 1 бкува не имеет его перед собой
+alert(stringVarOutput.charAt(0).toUpperCase() + stringVarOutput.substr(1,stringVarOutput.length - 1)); //Мы ведь узнаем, где начинаются слова через пробелы, а 1 бкува не имеет его перед собой
 
 
 var stringVarInput1 = "tseb eht ma i", stringVarOutput1 = '';  //Дана строка “tseb eht ma i”. Используя циклы, сделать строку-перевертыш (то есть последняя буква становится первой, предпоследняя - второй итд).
-for (var i = stringVarInput1.length - 1; i >=0; i--) {
+for ( var i = stringVarInput1.length - 1; i >=0; i-- ) {
   stringVarOutput1 += stringVarInput1[i];
 }
 alert(stringVarOutput1)
 
 //Какие факториалы? Какие фор офы фор ины? Я ГУМАНИТАРЕЙ!!11! ГУ-МА-НИ-ТА-РЕЙ! Вы что, хотите, чтоб я СДОХ? Зачем я вообще полез в это программирование? Почему мне спокрйно не жилось?
+
+var factorialConst = 5; //Но тем не менее, вот вам мои костыльные FUCKториалы (Факториал числа - произведение всех натуральных чисел от 1 до nвключительно: 3! = 3*2*1, 5! = 5*4*3*2*1. С помощью циклов вычислить факториал числа 10. Использовать for.) 
+var factorialInput = factorialConst;
+var i =  factorialInput;
+for( var i =  factorialInput; i > 0; i-- ){
+     factorialInput *= i;
+}
+alert(factorialInput / factorialConst)
+
+
+var stringVarInput2 = "JavaScript is a pretty good language"; //На основе строки “JavaScript is a pretty good language” сделать новую строку,где каждое слово начинается с большой буквы, а пробелы удалены. Использовать for.
+var stringVarOutput2 = '';
+for (var i = 0; i < stringVarInput2.length; i++) {
+  stringVarOutput2 += (stringVarInput2[i - 1] == ' ') ? stringVarInput2[i].toUpperCase() : stringVarInput2[i];
+}
+stringVarOutput2 = stringVarOutput2.replace(/\s/g, '');
+alert( stringVarOutput2 )
+
+let list = {    //Перебрать объект и если значение в свойстве это строка то переписать ее всю в верхнем регистре.
+    name: "denis",
+    work: "easycode",
+    age: 29
+    }
+
+for (var prop in menu) {
+    
+}
+
+
+
+
