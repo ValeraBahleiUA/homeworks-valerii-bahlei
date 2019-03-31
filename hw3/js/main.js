@@ -67,10 +67,8 @@ let list = {    //Перебрать объект и если значение �
     age: 29
     }
 
-for (var prop in menu) {
-    
+for (var prop in list) {
+    if(typeof list[prop] == "string")
+    alert(list[prop].toUpperCase())
 }
-
-
-
-
+//Фар оф сделою потом
