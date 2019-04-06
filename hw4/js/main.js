@@ -47,14 +47,14 @@ alert(array1)
 }
 getArray(10)
 
-// function doubleArray(array2){ // Почему-то не понимаю, почему цикл зациклился. я ведь ничего не записываю в аррай2. почему і не может стать больше длины массива?
-// let array2Doubled = array2;
-// for(let i = 1; i <= array2.length - 1; i++){
-//   array2Doubled.push(array2[i])
-// }
-// alert(array2)
-// alert(array2Doubled)
-// }
-// doubleArray([0,1,2,3,4,5,6,7,8,9,10])
+function doubleArray(array2){ // Почему-то не понимаю, почему цикл зациклился. я ведь ничего не записываю в аррай2. почему і не может стать больше длины массива?
+let array2Doubled = array2;
+for(let i = 1; i <= arguments.length - 1; i++){
+  array2Doubled.push(array2[i])
+}
+alert(array2[1])
+alert(array2Doubled)
+}
+doubleArray([0,1,2,3,4,5,6,7,8,9,10])
 
 //Сдаю то, что успел сделать до занятия. Сейчас 18:55
