@@ -32,6 +32,12 @@ function generateLi(){
 const dropdownItems = document.getElementsByClassName("dropdown-item")//task 5. так и не удалось выполнит второе условие()
 function toggleAllChilds(){
 let children = this.getElementsByClassName("dropdown-menu")
+const notClosedMenu = document.querySelectorAll(
+   ".dropdown-menu:not(.d-none)"
+ );
+ Array.prototype.forEach.call(notClosedMenu, menu =>
+   menu.classList.add("d-none")
+ );
 for(child of children){
 child.classList.toggle("d-none")
 }
