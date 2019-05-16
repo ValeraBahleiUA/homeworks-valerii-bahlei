@@ -1,0 +1,15 @@
+.red{
+    color: red;
+    background-color: red; 
+}
+.white{
+    color: black;
+    background-color: white;
+}
+.d-none {
+    display: none;
+  }
+  
+  .dropdown-item {
+    cursor: pointer;
+  }
